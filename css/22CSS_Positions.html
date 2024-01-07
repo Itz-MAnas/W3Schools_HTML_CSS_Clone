@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - The position Property</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="main-nav">
+                <ul>
+                    <img src="/assets/w3schools logo.png" alt="" height="50px" width="80px">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Certificates</li>
+                    <li>Services</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="search_input">
+                    <img src="/assets/search.svg"/>
+                </div>
+                <div class="theme">
+                    <img src="/assets/theme changer.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+
+
+                        <div class="jobs">
+                            <img src="/assets/jobs icon.svg" alt="jobs icon">
+                        <a>Jobs</a>
+                        </div>
+
+
+                        <div class="spaces">
+                            <img src="/assets/spaces icon.svg" alt="spaces icon">
+                        <a>Spaces</a>
+                        </div>
+
+
+                        <div class="certified">
+                            <img src="./assets/get certified icon.svg" alt="get certified icon">
+                        <a>get Certified</a>
+                        </div>
+
+            </div>
+        </header>
+        <nav>
+            <a href="../index.html">HTML</a>
+            <a href="/index.html">CSS</a>
+            <a>JAVASCRIPT</a>
+            <a>SQL</a>
+        </nav>
+        <!-- Main container -->
+        <div class="section-splitter">
+            <aside class="side-bar">
+                <h2>CSS Tutorial</h2>
+                <a href="./index.html">CSS HOME</a>
+                <a href="./01Introduction.html">CSS Introduction</a>
+                <a href="./02CSS_Syntax.html">CSS Syntax</a>
+                <a href="./03CSS_Selector.html">CSS Selector</a>
+                <a href="./04CSS_howTo.html">CSS How To</a>
+                <a href="./05CSS_Comments.html">CSS Comments</a>
+                <a href="./06CSS_Colors.html">CSS Colors</a>
+                <a href="./07CSS_Background.html">CSS Backgrounds</a>
+                <a href="./08CSS_Borders.html">CSS Borders</a>
+                <a href="./09CSS_Margins.html">CSS Margins</a>
+                <a href="./10CSS_Padding.html">CSS Padding</a>
+                <a href="./11CSS_HeightWidth.html">CSS Height/Width</a>
+                <a href="./12CSS_Box_Model.html">CSS Box Model</a>
+                <a href="./13CSS_Outline.html">CSS Outline</a>
+                <a href="./14CSS_Text.html">CSS Text</a>
+                <a href="./15CSS_Fonts.html">CSS Fonts</a>
+                <a href="./16CSS_Icons.html">CSS Icons</a>
+                <a href="./17CSS_Links.html">CSS Links</a>
+                <a href="./18CSS_Lists.html">CSS Lists</a>
+                <a href="./19CSS_Tables.html">CSS Tables</a>
+                <a href="./20CSS_Display.html">CSS Display</a>
+                <a href="./21CSS_Max-Width.html">CSS Max-Width</a>
+                <a href="./22CSS_Positions.html">CSS Position</a>
+                <a href="./23CSS_ZIndex.html">CSS Z-index</a>
+                <a href="./24CSS_Overflow.html">CSS Overflow</a>
+                <a href="./25CSS_Float.html">CSS Float</a>
+                <a href="./26CSS_InlineBlock.html">CSS Inline-block</a>
+                <a href="./27CSS_Align.html">CSS Align</a>
+                <a href="./28CSS_Combinators.html">CSS Combinators</a>
+                <a href="./29CSS_Pseudo-classes.html">CSS Pseudo-class</a>
+                <a href="./30CSS_Pseudo-elements.html">CSS Pseudo-element</a>
+                <a href="./31CSS_Opacity.html">CSS Opacity</a>
+                <a href="./32CSS_NavigationBar.html">CSS Navigation Bar</a>
+                <a href="./33CSS_Dropdowns.html">CSS Dropdowns</a>
+                <a href="./34CSS_ImageGallery.html">CSS Image Gallery</a>
+                <a href="./35CSS_ImageSprites.html">CSS Image Sprites</a>
+                <a href="./36CSS_AttributeSelectors.html">CSS Attr Selectors</a>
+                <a href="./37CSS_Forms.html">CSS Forms</a>
+                <a href="./38CSS_Counters.html">CSS Counters</a>
+                <a href="./39CSS_WebsiteLayout.html">CSS Website Layout</a>
+                <a href="./40CSS_Units.html">CSS Units</a>
+                <a href="./41CSS_MathFunctions.html">CSS Math Functions</a>
+            </aside>
+
+
+            <div class="main-container">
+                <main class="content-container">
+                    <section class="content">
+                        <h1>CSS Layout - The position Property</h1>
+                        
+                        <div class="mybtn_div">
+                          <a href="./21CSS_Max-Width.html" class="mybtn"><button>Previous</button></a>
+                          <a href="./23CSS_ZIndex.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                        <hr>
+
+                        <p>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+
+                        <hr>
+
+                        <h2>The position Property</h2>
+
+                        <p>The position property specifies the type of positioning method used for an element.</p>
+                        <p>There are five different position values:</p>
+
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+
+                          <li>static</li>
+                          <li>relative</li>
+                          <li>fixed</li>
+                          <li>absolute</li>
+                          <li>sticky</li>
+   
+                        </ul>
+
+                        <p>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.</p>
+                       
+
+                        <hr>
+
+                        <h2>position: static;</h2>
+
+                        <p>HTML elements are positioned static by default.</p>
+
+                        <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+
+                        <p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+                        <img src="assets/52.png" alt="">
+
+                        <p>Here is the CSS that is used:</p>
+
+                        <div class="example" style="height: 280px;">
+                          <h3>Example</h3>
+                      <div class="code" style="height: 110px;">
+                  
+                  
+                          <span class="attribute">div.static </span> <span class="cont">{</span> <br> <sapn class="tag">position:</sapn> <span class="link">static;</span>
+                          <br> <sapn class="tag">border:</sapn> <span class="link">3px solid #73AD21;</span> <br><span class="cont">}</span>
+                  
+                      </div>
+                      <a>Try it Yourself >> </a>
+                      </div>
+
+                      <hr>
+
+
+                      <h2>position: relative;</h2>
+
+                      <p>An element with position: relative; is positioned relative to its normal position.</p>
+
+                      <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+
+                      <img src="assets/53.png" alt="">
+
+                      <p>Here is the CSS that is used:</p>
+
+                      <div class="example" style="height: 300px;">
+                        <h3>Example</h3>
+                    <div class="code" style="height: 130px;">
+                
+                
+                        <span class="attribute">div.relative </span> <span class="cont">{</span> <br> <sapn class="tag">position:</sapn> <span class="link">relative;</span> <br> <sapn class="tag">left:</sapn> <span class="link">30px;</span>
+                        <br> <sapn class="tag">border:</sapn> <span class="link">3px solid #73AD21;</span> <br><span class="cont">}</span>
+                
+                    </div>
+                    <a>Try it Yourself >> </a>
+                    </div>
+
+                    <hr>
+                    <hr>
+
+
+                    <h2>position: fixed;</h2>
+
+                    <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+
+                    <p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+
+                    <p>Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:</p>
+
+                    <div class="example" style="height: 350px;">
+                      <h3>Example</h3>
+                  <div class="code" style="height: 180px;">
+              
+              
+                      <span class="attribute">div.fixed </span> <span class="cont">{</span> <br> <sapn class="tag">position:</sapn> <span class="link">fixed;</span> <br> <sapn class="tag">bottom:</sapn> <span class="link">0;</span> <br> <sapn class="tag">right:</sapn> <span class="link">0;</span> <br> <sapn class="tag">width:</sapn> <span class="link">300px;</span>
+                      <br> <sapn class="tag">border:</sapn> <span class="link">3px solid #73AD21;</span> <br><span class="cont">}</span>
+              
+                  </div>
+                  <a>Try it Yourself >> </a>
+                  </div>
+
+                  <hr>
+
+                  <h2>position: absolute;</h2>
+
+                  <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+
+                  <p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+
+                  <p><b>Note:</b> Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+
+                  <p>Here is a simple example:</p>
+
+                  <img src="assets/54.png" alt="">
+
+                  <p>Here is the CSS that is used:</p>
+
+                  
+                  <div class="example" style="height: 550px;">
+                    <h3>Example</h3>
+                <div class="code" style="height: 380px;">
+            
+            
+                    <span class="attribute">div.relative </span> <span class="cont">{</span> <br> <sapn class="tag">position:</sapn> <span class="link">relative;</span> <br> <sapn class="tag">width:</sapn> <span class="link">400px;</span> <br> <sapn class="tag">height:</sapn> <span class="link">200px;</span> <br> <sapn class="tag">border:</sapn> <span class="link">3px solid #73AD21;</span> <br><span class="cont">}</span>
+
+                    <br>
+                    <br>
+
+                    <span class="attribute">div.absolute </span> <span class="cont">{</span> <br> <sapn class="tag">position:</sapn> <span class="link">absolute;</span> <br> <sapn class="tag">top:</sapn> <span class="link">80px;</span> <br> <sapn class="tag">right:</sapn> <span class="link">0;</span> <br> <sapn class="tag">width:</sapn> <span class="link">200px;</span> <br> <sapn class="tag">height:</sapn> <span class="link">100px;</span> <br> <sapn class="tag">border:</sapn> <span class="link">3px solid #73AD21;</span> <br><span class="cont">}</span>
+            
+                </div>
+                <a>Try it Yourself >> </a>
+                </div>
+
+                <hr>
+
+                <h2>position: sticky;</h2>
+
+                <p>An element with position: sticky; is positioned based on the user's scroll position.</p>
+
+                <p>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+
+                <img src="assets/55.png" alt="">
+
+                <div class="tips">
+                  <p><b>Note:</b> Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of top, right, bottom or left for sticky positioning to work.</p>
+              </div>
+
+              <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+
+              <div class="example" style="height: 350px;">
+                <h3>Example</h3>
+            <div class="code" style="height: 180px;">
+        
+        
+                <span class="attribute">div.sticky </span> <span class="cont">{</span> <br> <sapn class="tag">position:</sapn> <span class="link">-webkit-sticky;</span> <br> <sapn class="tag">position:</sapn> <span class="link">sticky;</span> <br> <sapn class="tag">top:</sapn> <span class="link">0;</span> <br> <sapn class="tag">background-color:</sapn> <span class="link">green;</span> <br> <sapn class="tag">border:</sapn> <span class="link">3px solid #73AD21;</span> <br><span class="cont">}</span>
+        
+            </div>
+            <a>Try it Yourself >> </a>
+            </div>
+
+            <hr>
+
+            <h2>Positioning Text In an Image</h2>
+            <p>How to position text over an image:</p>
+
+            <img src="assets/56.png" alt="">
+
+            <hr>
+
+                        <div class="mybtn_div">
+                            <a href="./21CSS_Max-Width.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./23CSS_ZIndex.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                    </section>
+
+
+                    <aside class="advertise">
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+                    </aside>
+                </main>
+                <footer>
+                    footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="main-nav">
+                <ul>
+                    <img src="/assets/w3schools logo.png" alt="" height="50px" width="80px">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Certificates</li>
+                    <li>Services</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="search_input">
+                    <img src="/assets/search.svg"/>
+                </div>
+                <div class="theme">
+                    <img src="/assets/theme changer.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+
+
+                        <div class="jobs">
+                            <img src="/assets/jobs icon.svg" alt="jobs icon">
+                        <a>Jobs</a>
+                        </div>
+
+
+                        <div class="spaces">
+                            <img src="/assets/spaces icon.svg" alt="spaces icon">
+                        <a>Spaces</a>
+                        </div>
+
+
+                        <div class="certified">
+                            <img src="./assets/get certified icon.svg" alt="get certified icon">
+                        <a>get Certified</a>
+                        </div>
+
+            </div>
+        </header>
+        <nav>
+            <a href="">HTML</a>
+            <a>CSS</a>
+            <a>JAVASCRIPT</a>
+            <a>SQL</a>
+            <nav>
+                <a href="../index.html">HTML</a>
+                <a href="/index.html">CSS</a>
+                <a>JAVASCRIPT</a>
+                <a>SQL</a>
+            </nav>
+            <!-- Main container -->
+            <div class="section-splitter">
+                <aside class="side-bar">
+                    <h2>CSS Tutorial</h2>
+                    <a href="./index.html">CSS HOME</a>
+                    <a href="./01Introduction.html">CSS Introduction</a>
+                    <a href="./02CSS_Syntax.html">CSS Syntax</a>
+                    <a href="./03CSS_Selector.html">CSS Selector</a>
+                    <a href="./04CSS_howTo.html">CSS How To</a>
+                    <a href="./05CSS_Comments.html">CSS Comments</a>
+                    <a href="./06CSS_Colors.html">CSS Colors</a>
+                    <a href="./07CSS_Background.html">CSS Backgrounds</a>
+                    <a href="./08CSS_Borders.html">CSS Borders</a>
+                    <a href="./09CSS_Margins.html">CSS Margins</a>
+                    <a href="./10CSS_Padding.html">CSS Padding</a>
+                    <a href="./11CSS_HeightWidth.html">CSS Height/Width</a>
+                    <a href="./12CSS_Box_Model.html">CSS Box Model</a>
+                    <a href="./13CSS_Outline.html">CSS Outline</a>
+                    <a href="./14CSS_Text.html">CSS Text</a>
+                    <a href="./15CSS_Fonts.html">CSS Fonts</a>
+                    <a href="./16CSS_Icons.html">CSS Icons</a>
+                    <a href="./17CSS_Links.html">CSS Links</a>
+                    <a href="./18CSS_Lists.html">CSS Lists</a>
+                    <a href="./19CSS_Tables.html">CSS Tables</a>
+                    <a href="./20CSS_Display.html">CSS Display</a>
+                    <a href="./21CSS_Max-Width.html">CSS Max-Width</a>
+                    <a href="./22CSS_Positions.html">CSS Position</a>
+                    <a href="./23CSS_ZIndex.html">CSS Z-index</a>
+                    <a href="./24CSS_Overflow.html">CSS Overflow</a>
+                    <a href="./25CSS_Float.html">CSS Float</a>
+                    <a href="./26CSS_InlineBlock.html">CSS Inline-block</a>
+                    <a href="./27CSS_Align.html">CSS Align</a>
+                    <a href="./28CSS_Combinators.html">CSS Combinators</a>
+                    <a href="./29CSS_Pseudo-classes.html">CSS Pseudo-class</a>
+                    <a href="./30CSS_Pseudo-elements.html">CSS Pseudo-element</a>
+                    <a href="./31CSS_Opacity.html">CSS Opacity</a>
+                    <a href="./32CSS_NavigationBar.html">CSS Navigation Bar</a>
+                    <a href="./33CSS_Dropdowns.html">CSS Dropdowns</a>
+                    <a href="./34CSS_ImageGallery.html">CSS Image Gallery</a>
+                    <a href="./35CSS_ImageSprites.html">CSS Image Sprites</a>
+                    <a href="./36CSS_AttributeSelectors.html">CSS Attr Selectors</a>
+                    <a href="./37CSS_Forms.html">CSS Forms</a>
+                    <a href="./38CSS_Counters.html">CSS Counters</a>
+                    <a href="./39CSS_WebsiteLayout.html">CSS Website Layout</a>
+                    <a href="./40CSS_Units.html">CSS Units</a>
+                    <a href="./41CSS_MathFunctions.html">CSS Math Functions</a>
+                </aside>
+
+
+            <div class="main-container">
+                <main class="content-container">
+                    <section class="content">
+                        <h1>CSS Counters</h1>
+                        
+                        <div class="mybtn_div">
+                          <a href="./37CSS_Forms.html" class="mybtn"><button>Previous</button></a>
+                          <a href="./39CSS_WebsiteLayout.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                        <hr>
+
+                        <img src="assets/93.png" alt="">
+
+                        <p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.</p>
+
+                        <hr>
+
+                        <h2>Automatic Numbering With Counters</h2>
+
+                        <p>CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).</p>
+
+                        <p>To work with CSS counters we will use the following properties:</p>
+
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+                         <li>counter-reset - Creates or resets a counter</li>
+                         <li>counter-increment - Increments a counter value</li>
+                         <li>content - Inserts generated content</li>
+                         <li>counter() or counters() function - Adds the value of a counter to an element</li>
+
+                      </ul>
+
+                      <p>To use a CSS counter, it must first be created with counter-reset.</p>
+
+                      <p>The following example creates a counter for the page (in the body selector), then increments the counter value for each "h2" element and adds "Section "value of the counter":" to the beginning of each "h2" element:</p>
+
+                      <div class="example" style="height: 370px;">
+                        <h3>Example</h3>
+                        <div class="code" style="height: 220px;">
+                    
+                    
+                        <span class="attribute">body </span> <span class="cont">{</span> <br> <sapn class="tag">counter-reset:</sapn> <span class="link">section;</span>
+                        <br><span class="cont">}</span>
+            
+                        <br>
+                        <br>
+            
+                        <span class="attribute">h2::before </span> <span class="cont">{</span> <br> <sapn class="tag">counter-increment:</sapn> <span class="link">section;</span> <br> <sapn class="tag">content:</sapn> <span class="link">"Section " counter(section) ": ";</span>
+                        <br><span class="cont">}</span>
+            
+                      
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div>
+
+                        <hr>
+                        <hr>
+
+                        <h2>Nesting Counters</h2>
+
+                        <p>The following example creates one counter for the page (section) and one counter for each "h1" element (subsection). The "section" counter will be counted for each "h1" element with "Section "value of the section counter".", and the "subsection" counter will be counted for each "h2" element with ""value of the section counter"."value of the subsection counter"":</p>
+
+
+                        <div class="example" style="height: 580px;">
+                          <h3>Example</h3>
+                          <div class="code" style="height: 430px;">
+                      
+                            <span class="attribute">body </span> <span class="cont">{</span> <br> <sapn class="tag">counter-reset:</sapn> <span class="link">section;</span>
+                            <br><span class="cont">}</span>
+                
+                            <br>
+                            <br>
+
+                            <span class="attribute">h1 </span> <span class="cont">{</span> <br> <sapn class="tag">counter-reset:</sapn> <span class="link">subsection;</span>
+                            <br><span class="cont">}</span>
+
+                            <br>
+                            <br>
+                
+                            <span class="attribute">h1::before </span> <span class="cont">{</span> <br> <sapn class="tag">counter-increment:</sapn> <span class="link">section;</span> <br> <sapn class="tag">content:</sapn> <span class="link">"Section " counter(section) ": ";</span>
+                            <br><span class="cont">}</span>
+
+                            <br>
+                            <br>
+
+                            <span class="attribute">h2::before </span> <span class="cont">{</span> <br> <sapn class="tag">counter-increment:</sapn> <span class="link">subsection;</span> <br> <sapn class="tag">content:</sapn> <span class="link">"Section " counter(subsection) ": ";</span>
+                            <br><span class="cont">}</span>
+                          
+                          </div>
+                          <a>Try it Yourself >> </a>
+                          </div>
+
+
+                          <p>A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child elements. Here we use the counters() function to insert a string between different levels of nested counters:</p>
+
+
+                          <div class="example" style="height: 370px;">
+                            <h3>Example</h3>
+                            <div class="code" style="height: 230px;">
+                        
+                        
+                            <span class="attribute">ol </span> <span class="cont">{</span> <br> <sapn class="tag">counter-reset:</sapn> <span class="link">section;</span> <br> <sapn class="tag">list-style-type:</sapn> <span class="link">none;</span>
+                            <br><span class="cont">}</span>
+                
+                            <br>
+                            <br>
+                
+                            <span class="attribute">li::before </span> <span class="cont">{</span> <br> <sapn class="tag">counter-increment:</sapn> <span class="link">section;</span> <br> <sapn class="tag">content:</sapn> <span class="link">counters(section,".") " ";</span>
+                            <br><span class="cont">}</span>
+                
+                          
+                            </div>
+                            <a>Try it Yourself >> </a>
+                            </div>
+
+                            <hr>
+
+
+
+
+
+                        <div class="mybtn_div">
+                            <a href="./37CSS_Forms.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./39CSS_WebsiteLayout.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                    </section>
+
+
+                    <aside class="advertise">
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+                    </aside>
+                </main>
+                <footer>
+                    footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

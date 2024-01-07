@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="main-nav">
+                <ul>
+                    <img src="/assets/w3schools logo.png" alt="" height="50px" width="80px">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Certificates</li>
+                    <li>Services</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="search_input">
+                    <img src="/assets/search.svg"/>
+                </div>
+                <div class="theme">
+                    <img src="/assets/theme changer.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+
+
+                        <div class="jobs">
+                            <img src="/assets/jobs icon.svg" alt="jobs icon">
+                        <a>Jobs</a>
+                        </div>
+
+
+                        <div class="spaces">
+                            <img src="/assets/spaces icon.svg" alt="spaces icon">
+                        <a>Spaces</a>
+                        </div>
+
+
+                        <div class="certified">
+                            <img src="./assets/get certified icon.svg" alt="get certified icon">
+                        <a>get Certified</a>
+                        </div>
+
+            </div>
+        </header>
+        <nav>
+            <a href="../index.html">HTML</a>
+            <a href="/index.html">CSS</a>
+            <a>JAVASCRIPT</a>
+            <a>SQL</a>
+        </nav>
+        <!-- Main container -->
+        <div class="section-splitter">
+            <aside class="side-bar">
+                <h2>CSS Tutorial</h2>
+                <a href="./index.html">CSS HOME</a>
+                <a href="./01Introduction.html">CSS Introduction</a>
+                <a href="./02CSS_Syntax.html">CSS Syntax</a>
+                <a href="./03CSS_Selector.html">CSS Selector</a>
+                <a href="./04CSS_howTo.html">CSS How To</a>
+                <a href="./05CSS_Comments.html">CSS Comments</a>
+                <a href="./06CSS_Colors.html">CSS Colors</a>
+                <a href="./07CSS_Background.html">CSS Backgrounds</a>
+                <a href="./08CSS_Borders.html">CSS Borders</a>
+                <a href="./09CSS_Margins.html">CSS Margins</a>
+                <a href="./10CSS_Padding.html">CSS Padding</a>
+                <a href="./11CSS_HeightWidth.html">CSS Height/Width</a>
+                <a href="./12CSS_Box_Model.html">CSS Box Model</a>
+                <a href="./13CSS_Outline.html">CSS Outline</a>
+                <a href="./14CSS_Text.html">CSS Text</a>
+                <a href="./15CSS_Fonts.html">CSS Fonts</a>
+                <a href="./16CSS_Icons.html">CSS Icons</a>
+                <a href="./17CSS_Links.html">CSS Links</a>
+                <a href="./18CSS_Lists.html">CSS Lists</a>
+                <a href="./19CSS_Tables.html">CSS Tables</a>
+                <a href="./20CSS_Display.html">CSS Display</a>
+                <a href="./21CSS_Max-Width.html">CSS Max-Width</a>
+                <a href="./22CSS_Positions.html">CSS Position</a>
+                <a href="./23CSS_ZIndex.html">CSS Z-index</a>
+                <a href="./24CSS_Overflow.html">CSS Overflow</a>
+                <a href="./25CSS_Float.html">CSS Float</a>
+                <a href="./26CSS_InlineBlock.html">CSS Inline-block</a>
+                <a href="./27CSS_Align.html">CSS Align</a>
+                <a href="./28CSS_Combinators.html">CSS Combinators</a>
+                <a href="./29CSS_Pseudo-classes.html">CSS Pseudo-class</a>
+                <a href="./30CSS_Pseudo-elements.html">CSS Pseudo-element</a>
+                <a href="./31CSS_Opacity.html">CSS Opacity</a>
+                <a href="./32CSS_NavigationBar.html">CSS Navigation Bar</a>
+                <a href="./33CSS_Dropdowns.html">CSS Dropdowns</a>
+                <a href="./34CSS_ImageGallery.html">CSS Image Gallery</a>
+                <a href="./35CSS_ImageSprites.html">CSS Image Sprites</a>
+                <a href="./36CSS_AttributeSelectors.html">CSS Attr Selectors</a>
+                <a href="./37CSS_Forms.html">CSS Forms</a>
+                <a href="./38CSS_Counters.html">CSS Counters</a>
+                <a href="./39CSS_WebsiteLayout.html">CSS Website Layout</a>
+                <a href="./40CSS_Units.html">CSS Units</a>
+                <a href="./41CSS_MathFunctions.html">CSS Math Functions</a>
+            </aside>
+
+
+            <div class="main-container">
+                <main class="content-container">
+                    <section class="content">
+                        <h1>CSS Borders</h1>
+                        
+                        <div class="mybtn_div">
+                            <a href="./07CSS_Background.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./09CSS_Margins.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                        <hr>
+
+                        <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+
+                        <hr>
+
+                        <img src="assets/12.png" alt="">
+
+                        <hr>
+
+                        <h2>CSS Border Style</h2>
+                        <p>The border-style property specifies what kind of border to display.</p>
+
+                        <p>The following values are allowed:</p>
+
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                            <li><b>dotted</b> - Defines a dotted border</li>
+                            <li><b>dashed</b> - Defines a dashed border</li>
+                            <li><b>solid</b> - Defines a solid border</li>
+                            <li><b>double</b> - Defines a double border</li>
+                            <li><b>groove</b> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                            <li><b>ridge</b> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                            <li><b>inset</b> - Defines a 3D inset border. The effect depends on the border-color value</li>
+                            <li><b>outset</b> - Defines a 3D outset border. The effect depends on the border-color value</li>
+                            <li><b>none</b> - Defines no border</li>
+                            <li><b>hidden</b> - Defines a hidden border</li>
+
+                        </ul>
+
+                        <p>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+
+                        <div class="example" style="height: 950px;">
+                            <h3>Example</h3>
+                            <p>The background color of a page is set like this:</p>
+                        <div class="code" style="height: 280px;">
+      
+      
+                            <span class="attribute">p.dotted  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">dotted ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.dashed  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">dashed ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.solid  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">solid ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.double  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">double ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.groove  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">groove ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.ridge  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">ridge ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.inset  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">inset ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.outset  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">outset ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.none  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">none ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.hidden  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">hidden ;</span><span class="cont">}</span>
+                            <br>
+                            <span class="attribute">p.mix  </span> <span class="cont">{</span> <sapn class="tag">border-style:</sapn> <span class="link">dotted dashed solid double ;</span><span class="cont">}</span>
+                            <br>
+
+      
+                        </div>
+
+                        <p>Result:</p>
+                        <img src="assets/13.png" alt="">
+                        <a>Try it Yourself >> </a>
+                        </div>
+
+
+                        <div class="tips">
+
+                            <p><b>Note: </b>None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the border-style property is set!</p>
+                         </div>
+
+                         <hr>
+
+
+                        <div class="mybtn_div">
+                            <a href="./07CSS_Background.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./09CSS_Margins.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                    </section>
+
+
+                    <aside class="advertise">
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+                    </aside>
+                </main>
+                <footer>
+                    footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

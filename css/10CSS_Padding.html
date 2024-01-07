@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Padding</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="main-nav">
+                <ul>
+                    <img src="/assets/w3schools logo.png" alt="" height="50px" width="80px">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Certificates</li>
+                    <li>Services</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="search_input">
+                    <img src="/assets/search.svg"/>
+                </div>
+                <div class="theme">
+                    <img src="/assets/theme changer.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+
+
+                        <div class="jobs">
+                            <img src="/assets/jobs icon.svg" alt="jobs icon">
+                        <a>Jobs</a>
+                        </div>
+
+
+                        <div class="spaces">
+                            <img src="/assets/spaces icon.svg" alt="spaces icon">
+                        <a>Spaces</a>
+                        </div>
+
+
+                        <div class="certified">
+                            <img src="./assets/get certified icon.svg" alt="get certified icon">
+                        <a>get Certified</a>
+                        </div>
+
+            </div>
+        </header>
+        <nav>
+          <a href="../index.html">HTML</a>
+          <a href="/index.html">CSS</a>
+          <a>JAVASCRIPT</a>
+          <a>SQL</a>
+      </nav>
+      <!-- Main container -->
+      <div class="section-splitter">
+        <aside class="side-bar">
+          <h2>CSS Tutorial</h2>
+          <a href="./index.html">CSS HOME</a>
+          <a href="./01Introduction.html">CSS Introduction</a>
+          <a href="./02CSS_Syntax.html">CSS Syntax</a>
+          <a href="./03CSS_Selector.html">CSS Selector</a>
+          <a href="./04CSS_howTo.html">CSS How To</a>
+          <a href="./05CSS_Comments.html">CSS Comments</a>
+          <a href="./06CSS_Colors.html">CSS Colors</a>
+          <a href="./07CSS_Background.html">CSS Backgrounds</a>
+          <a href="./08CSS_Borders.html">CSS Borders</a>
+          <a href="./09CSS_Margins.html">CSS Margins</a>
+          <a href="./10CSS_Padding.html">CSS Padding</a>
+          <a href="./11CSS_HeightWidth.html">CSS Height/Width</a>
+          <a href="./12CSS_Box_Model.html">CSS Box Model</a>
+          <a href="./13CSS_Outline.html">CSS Outline</a>
+          <a href="./14CSS_Text.html">CSS Text</a>
+          <a href="./15CSS_Fonts.html">CSS Fonts</a>
+          <a href="./16CSS_Icons.html">CSS Icons</a>
+          <a href="./17CSS_Links.html">CSS Links</a>
+          <a href="./18CSS_Lists.html">CSS Lists</a>
+          <a href="./19CSS_Tables.html">CSS Tables</a>
+          <a href="./20CSS_Display.html">CSS Display</a>
+          <a href="./21CSS_Max-Width.html">CSS Max-Width</a>
+          <a href="./22CSS_Positions.html">CSS Position</a>
+          <a href="./23CSS_ZIndex.html">CSS Z-index</a>
+          <a href="./24CSS_Overflow.html">CSS Overflow</a>
+          <a href="./25CSS_Float.html">CSS Float</a>
+          <a href="./26CSS_InlineBlock.html">CSS Inline-block</a>
+          <a href="./27CSS_Align.html">CSS Align</a>
+          <a href="./28CSS_Combinators.html">CSS Combinators</a>
+          <a href="./29CSS_Pseudo-classes.html">CSS Pseudo-class</a>
+          <a href="./30CSS_Pseudo-elements.html">CSS Pseudo-element</a>
+          <a href="./31CSS_Opacity.html">CSS Opacity</a>
+          <a href="./32CSS_NavigationBar.html">CSS Navigation Bar</a>
+          <a href="./33CSS_Dropdowns.html">CSS Dropdowns</a>
+          <a href="./34CSS_ImageGallery.html">CSS Image Gallery</a>
+          <a href="./35CSS_ImageSprites.html">CSS Image Sprites</a>
+          <a href="./36CSS_AttributeSelectors.html">CSS Attr Selectors</a>
+          <a href="./37CSS_Forms.html">CSS Forms</a>
+          <a href="./38CSS_Counters.html">CSS Counters</a>
+          <a href="./39CSS_WebsiteLayout.html">CSS Website Layout</a>
+          <a href="./40CSS_Units.html">CSS Units</a>
+          <a href="./41CSS_MathFunctions.html">CSS Math Functions</a>
+      </aside>
+
+
+            <div class="main-container">
+                <main class="content-container">
+                    <section class="content">
+                        <h1>CSS Padding</h1>
+                        
+                        <div class="mybtn_div">
+                          <a href="./09CSS_Margins.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./11CSS_HeightWidth.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                        <hr>
+
+                        <p>Padding is used to create space around an element's content, inside of any defined borders.</p>
+
+                        <hr>
+
+                        <img src="assets/15.png" alt="">
+
+                        <hr>
+
+                        <h2>CSS Padding</h2>
+
+                        <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+
+                        <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+
+                        <hr>
+
+                        <h2>Padding - Individual Sides</h2>
+                        <p>CSS has properties for specifying the padding for each side of an element:</p>
+
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+                          <li>Padding-top</li>
+                          <li>Padding-right</li>
+                          <li>Padding-bottom</li>
+                          <li>Padding-left</li>
+
+                      </ul>
+
+                      <p>All the padding properties can have the following values:</p>
+
+                      <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+                        <li>length - specifies a padding in px, pt, cm, etc.</li>
+                        <li>% - specifies a padding in % of the width of the containing element</li>
+                        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+
+                    </ul>
+
+                    <p><b>Tip: </b> Negative values are allowed.</p>
+
+
+                    <div class="example" style="height: 360px;">
+                      <h3>Example</h3>
+                      <p>Set different padding for all four sides of a "div" element:  </p>
+                  <div class="code" style="height: 160px;">
+
+
+                      <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">padding-top:</sapn> <span class="link">50px;</span> <br> <sapn class="tag">padding-bottom:</sapn> <span class="link">30px;</span> <br> <sapn class="tag">padding-right:</sapn> <span class="link">50px;</span> <br> <sapn class="tag">padding-left:</sapn> <span class="link">80px;</span> <br><span class="cont">}</span>
+
+
+
+                  </div>
+                  <a>Try it Yourself >> </a>
+                  </div>
+
+                  <hr>
+                  <hr>
+
+                  <h2>Padding - Shorthand Property</h2>
+                  <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+                  <p>The padding property is a shorthand property for the following individual padding properties:</p>
+
+                  <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-bottom</li>
+                    <li>padding-left</li>
+
+                </ul>
+
+                <p>So, here is how it works:</p>
+                <p>If the padding property has four values:</p>
+
+                <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+                  <li>padding: 25px 50px 75px 100px;
+                    <ul>
+                      <li>top padding is 25px</li>
+                      <li>right padding is 50px</li>
+                      <li>bottom padding is 75px</li>
+                      <li>left padding is 100px</li>
+                    </ul>
+                  </li>
+
+              </ul>
+
+
+              <div class="example" style="height: 300px;">
+                <h3>Example</h3>
+                <p>Use the padding shorthand property with four values:</p>
+            <div class="code" style="height: 90px;">
+
+
+                <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">padding:</sapn> <span class="link">25px 50px 75px 100px;</span> <br><span class="cont">}</span>
+
+            </div>
+            <a>Try it Yourself >> </a>
+            </div>
+
+
+            <p>If the padding property has three values:</p>
+
+            <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+              <li>padding: 25px 50px 75px;
+                <ul>
+                  <li>top padding is 25px</li>
+                  <li>right padding is 50px</li>
+                  <li>bottom padding is 75px</li>
+                </ul>
+              </li>
+
+          </ul>
+
+
+          
+          <div class="example" style="height: 300px;">
+            <h3>Example</h3>
+            <p>Use the padding shorthand property with three values:</p>
+        <div class="code" style="height: 90px;">
+
+
+            <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">padding:</sapn> <span class="link">25px 50px 75px;</span> <br><span class="cont">}</span>
+
+        </div>
+        <a>Try it Yourself >> </a>
+        </div>
+
+
+        <p>If the padding property has two values:</p>
+
+        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+          <li>padding: 25px 50px;
+            <ul>
+              <li>top padding is 25px</li>
+              <li>right padding is 50px</li>
+            </ul>
+          </li>
+
+      </ul>
+
+      <div class="example" style="height: 300px;">
+        <h3>Example</h3>
+        <p>Use the padding shorthand property with two values:</p>
+    <div class="code" style="height: 90px;">
+
+
+        <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">padding:</sapn> <span class="link">25px 50px;</span> <br><span class="cont">}</span>
+
+    </div>
+    <a>Try it Yourself >> </a>
+    </div>
+
+
+
+    <p>If the padding property has one value:</p>
+    <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                         
+      <li>padding: 25px;
+        <ul>
+          <li>top padding is 25px</li>
+        </ul>
+      </li>
+
+  </ul>
+
+
+  <div class="example" style="height: 300px;">
+    <h3>Example</h3>
+    <p>Use the padding shorthand property with one values:</p>
+<div class="code" style="height: 90px;">
+
+
+    <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">padding:</sapn> <span class="link">25px;</span> <br><span class="cont">}</span>
+
+</div>
+<a>Try it Yourself >> </a>
+</div>
+
+
+<hr>
+
+
+<h2>Padding and Element Width</h2>
+<p>The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).</p>
+<p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+
+
+<div class="example" style="height: 330px;">
+  <h3>Example</h3>
+  <p>Use Here, the "div" element is given a width of 300px. However, the actual width of the "div" element will be 350px (300px + 25px of left padding + 25px of right padding):</p>
+<div class="code" style="height: 110px;">
+
+
+  <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">width:</sapn> <span class="link">300px;</span> <br> <sapn class="tag">padding:</sapn> <span class="link">25px;</span> <br> <span class="cont">}</span>
+
+
+
+</div>
+<a>Try it Yourself >> </a>
+</div>
+
+<p>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.</p>
+
+
+<div class="example" style="height: 330px;">
+  <h3>Example</h3>
+  <p>Use the box-sizing property to keep the width at 300px, no matter the amount of padding:</p>
+<div class="code" style="height: 130px;">
+
+
+  <span class="attribute">div </span> <span class="cont">{</span> <br> <sapn class="tag">width:</sapn> <span class="link">300px;</span> <br> <sapn class="tag">padding:</sapn> <span class="link">25px;</span> <br> <sapn class="tag">box-sizing:</sapn> <span class="link">border-box;</span> <br> <span class="cont">}</span>
+
+
+
+</div>
+<a>Try it Yourself >> </a>
+</div>
+
+<hr>
+
+
+
+
+                        <div class="mybtn_div">
+                            <a href="./09CSS_Margins.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./11CSS_HeightWidth.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                    </section>
+
+
+                    <aside class="advertise">
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+                    </aside>
+                </main>
+                <footer>
+                    footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

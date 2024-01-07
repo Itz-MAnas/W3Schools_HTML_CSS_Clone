@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="main-nav">
+                <ul>
+                    <img src="/assets/w3schools logo.png" alt="" height="50px" width="80px">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Certificates</li>
+                    <li>Services</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="search_input">
+                    <img src="/assets/search.svg"/>
+                </div>
+                <div class="theme">
+                    <img src="/assets/theme changer.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+
+
+                        <div class="jobs">
+                            <img src="/assets/jobs icon.svg" alt="jobs icon">
+                        <a>Jobs</a>
+                        </div>
+
+
+                        <div class="spaces">
+                            <img src="/assets/spaces icon.svg" alt="spaces icon">
+                        <a>Spaces</a>
+                        </div>
+
+
+                        <div class="certified">
+                            <img src="./assets/get certified icon.svg" alt="get certified icon">
+                        <a>get Certified</a>
+                        </div>
+
+            </div>
+        </header>
+        <nav>
+            <a href="../index.html">HTML</a>
+            <a href="/index.html">CSS</a>
+            <a>JAVASCRIPT</a>
+            <a>SQL</a>
+        </nav>
+        <!-- Main container -->
+        <div class="section-splitter">
+            <aside class="side-bar">
+                <h2>CSS Tutorial</h2>
+                <a href="./index.html">CSS HOME</a>
+                <a href="./01Introduction.html">CSS Introduction</a>
+                <a href="./02CSS_Syntax.html">CSS Syntax</a>
+                <a href="./03CSS_Selector.html">CSS Selector</a>
+                <a href="./04CSS_howTo.html">CSS How To</a>
+                <a href="./05CSS_Comments.html">CSS Comments</a>
+                <a href="./06CSS_Colors.html">CSS Colors</a>
+                <a href="./07CSS_Background.html">CSS Backgrounds</a>
+                <a href="./08CSS_Borders.html">CSS Borders</a>
+                <a href="./09CSS_Margins.html">CSS Margins</a>
+                <a href="./10CSS_Padding.html">CSS Padding</a>
+                <a href="./11CSS_HeightWidth.html">CSS Height/Width</a>
+                <a href="./12CSS_Box_Model.html">CSS Box Model</a>
+                <a href="./13CSS_Outline.html">CSS Outline</a>
+                <a href="./14CSS_Text.html">CSS Text</a>
+                <a href="./15CSS_Fonts.html">CSS Fonts</a>
+                <a href="./16CSS_Icons.html">CSS Icons</a>
+                <a href="./17CSS_Links.html">CSS Links</a>
+                <a href="./18CSS_Lists.html">CSS Lists</a>
+                <a href="./19CSS_Tables.html">CSS Tables</a>
+                <a href="./20CSS_Display.html">CSS Display</a>
+                <a href="./21CSS_Max-Width.html">CSS Max-Width</a>
+                <a href="./22CSS_Positions.html">CSS Position</a>
+                <a href="./23CSS_ZIndex.html">CSS Z-index</a>
+                <a href="./24CSS_Overflow.html">CSS Overflow</a>
+                <a href="./25CSS_Float.html">CSS Float</a>
+                <a href="./26CSS_InlineBlock.html">CSS Inline-block</a>
+                <a href="./27CSS_Align.html">CSS Align</a>
+                <a href="./28CSS_Combinators.html">CSS Combinators</a>
+                <a href="./29CSS_Pseudo-classes.html">CSS Pseudo-class</a>
+                <a href="./30CSS_Pseudo-elements.html">CSS Pseudo-element</a>
+                <a href="./31CSS_Opacity.html">CSS Opacity</a>
+                <a href="./32CSS_NavigationBar.html">CSS Navigation Bar</a>
+                <a href="./33CSS_Dropdowns.html">CSS Dropdowns</a>
+                <a href="./34CSS_ImageGallery.html">CSS Image Gallery</a>
+                <a href="./35CSS_ImageSprites.html">CSS Image Sprites</a>
+                <a href="./36CSS_AttributeSelectors.html">CSS Attr Selectors</a>
+                <a href="./37CSS_Forms.html">CSS Forms</a>
+                <a href="./38CSS_Counters.html">CSS Counters</a>
+                <a href="./39CSS_WebsiteLayout.html">CSS Website Layout</a>
+                <a href="./40CSS_Units.html">CSS Units</a>
+                <a href="./41CSS_MathFunctions.html">CSS Math Functions</a>
+            </aside>
+
+
+            <div class="main-container">
+                <main class="content-container">
+                    <section class="content">
+                        <h1>CSS Pseudo-elements</h1>
+                        
+                        <div class="mybtn_div">
+                          <a href="./29CSS_Pseudo-classes.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./31CSS_Opacity.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                        <hr>
+
+                        <h2>What are Pseudo-Elements?</h2>
+                        <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+                        <p>For example, it can be used to:</p>
+
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+
+                          <li>Style the first letter, or line, of an element</li>
+                          <li>Insert content before, or after, the content of an element</li>
+   
+                        </ul>
+
+                        <hr>
+
+
+                        <h2>Syntax</h2>
+                        <p>The syntax of pseudo-elements:</p>
+
+                        <div class="example" style="height: 190px;">
+                          <div class="code" style="height: 90px;">
+                      
+                      
+                              <span class="attribute">selector:pseudo-element </span> <span class="cont">{</span> <br> <sapn class="tag">property:</sapn> <span class="link">value;</span>
+                              <br><span class="cont">}</span>
+                      
+                          </div>
+                          <a>Try it Yourself >> </a>
+                          </div>
+
+                          <hr>
+
+                          <h2>The ::first-line Pseudo-element</h2>
+
+                          <p>The ::first-line pseudo-element is used to add a special style to the first line of a text.</p>
+                          <p>The following example formats the first line of the text in all "p" elements:</p>
+
+                          <div class="example" style="height: 230px;">
+                            <h3>Example</h3>
+                            <div class="code" style="height: 100px;">
+                        
+                        
+                                <span class="attribute">p::first-line </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">#ff0000;</span> <br> <sapn class="tag">font-variant:</sapn> <span class="link">small-caps;</span>
+                                <br><span class="cont">}</span>
+                        
+                            </div>
+                            <a>Try it Yourself >> </a>
+                            </div>
+
+                            <p><b>Note:</b> The ::first-line pseudo-element can only be applied to block-level elements.</p>
+
+                            <p>The following properties apply to the ::first-line pseudo-element:</p>
+
+                            <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+
+                              <li>font properties</li>
+                              <li>color properties</li>
+                              <li>background properties</li>
+                              <li>word-spacing</li>
+                              <li>letter-spacing</li>
+                              <li>text-decoration</li>
+                              <li>vertical-align</li>
+                              <li>text-transform</li>
+                              <li>line-height</li>
+                              <li>clear</li>
+       
+                            </ul>
+
+
+                            <div class="tips" style="display: flex; flex-direction: column; gap: 20px;">
+                              <p><b>Notice the double colon notation</b> - ::first-line versus :first-line</p>
+
+                              <p>The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between <b>pseudo-classes</b> and <b>pseudo-elements</b>.</p>
+
+                              <p>The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.</p>
+
+                              <p>For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.</p>
+                          </div>
+
+                          <hr>
+                          <hr>
+
+                          <h2>The ::first-letter Pseudo-element</h2>
+
+                          <p>The ::first-letter pseudo-element is used to add a special style to the first letter of a text.</p>
+
+                          <p>The following example formats the first letter of the text in all "p" elements: </p>
+
+                          <div class="example" style="height: 230px;">
+                            <h3>Example</h3>
+                            <div class="code" style="height: 100px;">
+                        
+                        
+                                <span class="attribute">p::first-letter </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">#ff0000;</span> <br> <sapn class="tag">font-size:</sapn> <span class="link">xx-large;</span>
+                                <br><span class="cont">}</span>
+                        
+                            </div>
+                            <a>Try it Yourself >> </a>
+                            </div>
+
+
+                            <p>Note: The ::first-letter pseudo-element can only be applied to block-level elements.</p>
+
+                            <p>The following properties apply to the ::first-letter pseudo- element: </p>
+
+                            <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+
+                              <li>font properties</li>
+                              <li>color properties</li>
+                              <li>background properties</li>
+                              <li>margin properties</li>
+                              <li>padding properties</li>
+                              <li>border properties</li>
+                              <li>text-decoration</li>
+                              <li>vertical-align (only if "float" is "none")</li>
+                              <li>text-transform</li>
+                              <li>line-height</li>
+                              <li>float</li>
+                              <li>clear</li>
+       
+                            </ul>
+
+                            <hr>
+
+                            <h2>Pseudo-elements and HTML Classes</h2>
+
+                            <p>Pseudo-elements can be combined with HTML classes: </p>
+
+                            <div class="example" style="height: 230px;">
+                              <h3>Example</h3>
+                              <div class="code" style="height: 100px;">
+                          
+                          
+                                  <span class="attribute">p.intro::first-letter </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">#ff0000;</span> <br> <sapn class="tag">font-size:</sapn> <span class="link">200%;</span>
+                                  <br><span class="cont">}</span>
+                          
+                              </div>
+                              <a>Try it Yourself >> </a>
+                              </div>
+
+                              <p>The example above will display the first letter of paragraphs with class="intro", in red and in a larger size.</p>
+
+                              <hr>
+
+
+                              <h2>Multiple Pseudo-elements</h2>
+
+                              <p>Several pseudo-elements can also be combined.</p>
+                              <p>In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:</p>
+
+                              <div class="example" style="height: 360px;">
+                                <h3>Example</h3>
+                                <div class="code" style="height: 220px;">
+                            
+                            
+                                    <span class="attribute">p::first-letter </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">#ff0000;</span> <br> <sapn class="tag">font-size:</sapn> <span class="link">xx-large;</span>
+                                    <br><span class="cont">}</span>
+
+                                    <br>
+                                    <br>
+
+                                    <span class="attribute">p::first-line </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">#0000ff;</span> <br> <sapn class="tag">font-variant:</sapn> <span class="link">small-caps;</span>
+                                    <br><span class="cont">}</span>
+                            
+                                </div>
+                                <a>Try it Yourself >> </a>
+                                </div>
+
+                                <hr>
+
+                                <h2>CSS - The ::before Pseudo-element</h2>
+
+                                <p>The ::before pseudo-element can be used to insert some content before the content of an element.</p>
+                                <p>The following example inserts an image before the content of each "h1" element:</p>
+
+                                <div class="example" style="height: 230px;">
+                                  <h3>Example</h3>
+                                  <div class="code" style="height: 80px;">
+                              
+                              
+                                      <span class="attribute">h1::before </span> <span class="cont">{</span> <br> <sapn class="tag">content:</sapn> <span class="link">url(smiley.gif);</span> 
+                                      <br><span class="cont">}</span>
+                              
+                                  </div>
+                                  <a>Try it Yourself >> </a>
+                                  </div>
+
+
+                                  <hr>
+
+
+                                  <h2>CSS - The ::after Pseudo-element</h2>
+
+                                  <p>The ::after pseudo-element can be used to insert some content after the content of an element.</p>
+
+                                  <p>The following example inserts an image after the content of each "h1" element:</p>
+
+                                  <div class="example" style="height: 230px;">
+                                    <h3>Example</h3>
+                                    <div class="code" style="height: 80px;">
+                                
+                                
+                                        <span class="attribute">h1::after </span> <span class="cont">{</span> <br> <sapn class="tag">content:</sapn> <span class="link">url(smiley.gif);</span> 
+                                        <br><span class="cont">}</span>
+                                
+                                    </div>
+                                    <a>Try it Yourself >> </a>
+                                    </div>
+
+
+                                    <hr>
+
+
+                                    <h2>CSS - The ::marker Pseudo-element</h2>
+
+                                    <p>The ::marker pseudo-element selects the markers of list items.</p>
+                                    <p>The following example styles the markers of list items:</p>
+
+
+                                    <div class="example" style="height: 230px;">
+                                      <h3>Example</h3>
+                                      <div class="code" style="height: 100px;">
+                                  
+                                  
+                                          <span class="attribute">::marker </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">red;</span> <br> <sapn class="tag">font-size:</sapn> <span class="link">23px;</span>
+                                          <br><span class="cont">}</span>
+                                  
+                                      </div>
+                                      <a>Try it Yourself >> </a>
+                                      </div>
+
+                                      <hr>
+
+                                      <h2>CSS - The ::selection Pseudo-element</h2>
+
+                                      <p>The ::selection pseudo-element matches the portion of an element that is selected by a user.</p>
+
+                                      <p>The following CSS properties can be applied to ::selection: color, background, cursor, and outline.</p>
+
+                                      <p>The following example makes the selected text red on a yellow background:</p>
+
+                                      <div class="example" style="height: 230px;">
+                                        <h3>Example</h3>
+                                        <div class="code" style="height: 100px;">
+                                    
+                                    
+                                            <span class="attribute">::selection </span> <span class="cont">{</span> <br> <sapn class="tag">color:</sapn> <span class="link">red;</span> <br> <sapn class="tag">background:</sapn> <span class="link">yellow;</span>
+                                            <br><span class="cont">}</span>
+                                    
+                                        </div>
+                                        <a>Try it Yourself >> </a>
+                                        </div>
+
+
+          <hr>
+
+
+                        <div class="mybtn_div">
+                            <a href="./29CSS_Pseudo-classes.html" class="mybtn"><button>Previous</button></a>
+                            <a href="./31CSS_Opacity.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                    </section>
+
+
+                    <aside class="advertise">
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+                    </aside>
+                </main>
+                <footer>
+                    footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
