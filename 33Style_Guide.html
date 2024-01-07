@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Style Guide</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="main-nav">
+                <ul>
+                    <img src="/assets/w3schools logo.png" alt="" height="50px" width="80px">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Certificates</li>
+                    <li>Services</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="search_input">
+                    <img src="/assets/search.svg"/>
+                </div>
+                <div class="theme">
+                    <img src="/assets/theme changer.svg" alt="">
+                </div>
+            </div>
+            <div class="actions">
+
+
+                        <div class="jobs">
+                            <img src="/assets/jobs icon.svg" alt="jobs icon">
+                        <a>Jobs</a>
+                        </div>
+
+
+                        <div class="spaces">
+                            <img src="/assets/spaces icon.svg" alt="spaces icon">
+                        <a>Spaces</a>
+                        </div>
+
+
+                        <div class="certified">
+                            <img src="./assets/get certified icon.svg" alt="get certified icon">
+                        <a>get Certified</a>
+                        </div>
+
+            </div>
+        </header>
+        <nav>
+            <a href="/index.html">HTML</a>
+            <a href="/css/index.html">CSS</a>
+            <a>JAVASCRIPT</a>
+            <a>SQL</a>
+        </nav>
+        <!-- Main container -->
+        <div class="section-splitter">
+            <aside class="side-bar">
+                <h2>HTML Tutorial</h2>
+                <a href="/index.html">HTML HOME</a>
+                <a href="/02Introduction.html">HTML Introduction</a>
+                <a href="/03Editors.html">HTML Editors</a>
+                <a href="/04Basics.html">HTML Basic</a>
+                <a href="/05Elements.html">HTML Elements</a>
+                <a href="/06Attributes.html">HTML Attributes</a>
+                <a href="/07Headings.html">HTML Headings</a>
+                <a href="/08Paragraphs.html">HTML Paragraphs</a>
+                <a href="/09Styles.html">HTML Styles</a>
+                <a href="/10TextFormating.html">HTML Formatting</a>
+                <a href="/11Quotation.html">HTML Quotations</a>
+                <a href="/12Comments.html">HTML Comments</a>
+                <a href="/13Colors.html">HTML Colors</a>
+                <a href="/14HTML_CSS.html">HTML CSS</a>
+                <a href="/15Links.html">HTML Links</a>
+                <a href="/16Html_Images.html">HTML Images</a>
+                <a href="/17Favicon.html">HTML Favicon</a>
+                <a href="/18Page_Title.html">HTML Page Title</a>
+                <a href="/19Tables.html">HTML Tables</a>
+                <a href="/20List.html">HTML Lists</a>
+                <a href="/21Block&Inline.html">HTML Block & Inline</a>
+                <a href="/22Div.html">HTML Div</a>
+                <a href="/23Classes.html">HTML Classes</a>
+                <a href="/24Id.html">HTML Id</a>
+                <a href="/25Iframes.html">HTML Iframes</a>
+                <a href="/26Javascript.html">HTML JavaScript</a>
+                <a href="/27File_Path.html">HTML File Paths</a>
+                <a href="/28Head.html">HTML Head</a>
+                <a href="/29Layouts.html">HTML Layout</a>
+                <a href="/30Responsive.html">HTML Responsive</a>
+                <a href="/31ComputerCode.html">HTML Computercode</a>
+                <a href="/32Sementic.html">HTML Semantics</a>
+                <a href="/33Style_Guide.html">HTML Style Guide</a>
+                <a href="/34Entities.html">HTML Entities</a>
+                <a href="/35Symbols.html">HTML Symbols</a>
+                <a href="/36Emojis.html">HTML Emojis</a>
+                <a href="/37Charsets.html">HTML Charsets</a>
+                <a href="/38URL_Encoding.html">HTML URL Encode</a>
+                <a href="/39HTML_vs_XHTML.html">HTML vs. XHTML</a>
+            </aside>
+
+
+            <div class="main-container">
+                <main class="content-container">
+                    <section class="content">
+                        <h1>HTML Style Guide</h1>
+                        
+                        <div class="mybtn_div">
+                            <a href="/32Sementic.html" class="mybtn"><button>Previous</button></a>
+                            <a href="/34Entities.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                        <hr>
+
+                        <p>A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.</p>
+                        
+                        <p>Here are some guidelines and tips for creating good HTML code.</p>
+
+                        <hr>
+
+                        <h2>Always Declare Document Type</h2>
+
+                        <p>Always declare the document type as the first line in your document.</p>
+
+                        <p>The correct document type for HTML is:</p>
+
+
+                        <div class="example" style="height: 80px;">
+                        <div class="code" style="height: 40px;">
+            
+                           <span class="lt"> <</span><span class="attribute">!DOCTYPE</span>
+                           <span class="tag">html</span>
+                           <span class="gt">></span>
+            
+                        </div>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <h2>Use Lowercase Element Names</h2>
+
+                        <p>HTML allows mixing uppercase and lowercase letters in element names.</p>
+
+                        <p>However, we recommend using lowercase element names, because:</p>
+
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                            <li>Mixing uppercase and lowercase names looks bad</li>
+                            <li>Developers normally use lowercase names</li>
+                            <li>Lowercase looks cleaner</li>
+                            <li>Lowercase is easier to write</li>
+                        </ul>
+
+                        <div class="example" style="height: 180px;">
+                            <h3>Good:</h3>
+                            <div class="code" style="height: 100px;">
+                
+                               <span class="lt"> <</span><span class="attribute">body</span><span class="gt">></span>
+                               <br>
+                               <span class="lt"> <</span><span class="attribute">p</span><span class="gt">></span>
+                               <span class="cont">This is a paragraph.</span>
+                               <span class="lt"> <</span><span class="attribute">/p</span><span class="gt">></span>
+                               <br>
+                               <span class="lt"> <</span><span class="attribute">/body</span><span class="gt">></span>
+                
+                            </div>
+    
+                            </div>
+
+                        <div class="example" style="height: 180px;">
+                            <h3>Bad:</h3>
+                            <div class="code" style="height: 100px;">
+                
+                               <span class="lt"> <</span><span class="attribute">BODY</span><span class="gt">></span>
+                               <br>
+                               <span class="lt"> <</span><span class="attribute">P</span><span class="gt">></span>
+                               <span class="cont">This is a paragraph.</span>
+                               <span class="lt"> <</span><span class="attribute">/P</span><span class="gt">></span>
+                               <br>
+                               <span class="lt"> <</span><span class="attribute">/BODY</span><span class="gt">></span>
+                
+                            </div>
+    
+                            </div>
+
+                            <hr>
+                            <hr>
+
+
+                            <h2>Close All HTML Elements</h2>
+                            <p>In HTML, you do not have to close all elements (for example the "p" element).</p>
+                            <p>However, we strongly recommend closing all HTML elements, like this:</p>
+
+                            <div class="example" style="height: 200px;">
+                                <h3>Good:</h3>
+                                <div class="code" style="height: 110px;">
+                    
+                                   <span class="lt"> <</span><span class="attribute">section</span><span class="gt">></span>
+                                   <br>
+                                   <span class="lt"> <</span><span class="attribute">p</span><span class="gt">></span>
+                                   <span class="cont">This is a paragraph.</span>
+                                   <span class="lt"> <</span><span class="attribute">/p</span><span class="gt">></span>
+                                   <br>
+                                   <span class="lt"> <</span><span class="attribute">p</span><span class="gt">></span>
+                                   <span class="cont">This is a paragraph.</span>
+                                   <span class="lt"> <</span><span class="attribute">/p</span><span class="gt">></span>
+                                   <br>
+                                   <span class="lt"> <</span><span class="attribute">/section</span><span class="gt">></span>
+                    
+                                </div>
+        
+                                </div>
+    
+                            <div class="example" style="height: 200px;">
+                                <h3>Bad:</h3>
+                                <div class="code" style="height: 110px;">
+                    
+                                    <span class="lt"> <</span><span class="attribute">SECTION</span><span class="gt">></span>
+                                    <br>
+                                    <span class="lt"> <</span><span class="attribute">P</span><span class="gt">></span>
+                                    <span class="cont">This is a paragraph.</span>
+                                    <span class="lt"> <</span><span class="attribute">/P</span><span class="gt">></span>
+                                    <br>
+                                    <span class="lt"> <</span><span class="attribute">P</span><span class="gt">></span>
+                                    <span class="cont">This is a paragraph.</span>
+                                    <span class="lt"> <</span><span class="attribute">/P</span><span class="gt">></span>
+                                    <br>
+                                    <span class="lt"> <</span><span class="attribute">/SECTION</span><span class="gt">></span>
+                    
+                                </div>
+        
+                                </div>
+
+
+                                <hr>
+
+                                <h2>Use Lowercase Attribute Names</h2>
+                                <p>HTML allows mixing uppercase and lowercase letters in attribute names.</p>
+                                <p>However, we recommend using lowercase attribute names, because:</p>
+
+                                <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                                    <li>Mixing uppercase and lowercase names looks bad</li>
+                                    <li>Developers normally use lowercase names</li>
+                                    <li>Lowercase looks cleaner</li>
+                                    <li>Lowercase is easier to write</li>
+                                </ul>
+
+
+                                <div class="example" style="height: 120px;">
+                                    <h3>Good:</h3>
+                                    <div class="code" style="height: 40px;">
+                        
+                                       <span class="lt"> <</span><span class="attribute">a</span>
+                                       <span class="tag">href</span>
+                                       <span class="link">="https://www.w3schools.com/html/"</span>
+                                       <span class="gt">></span>
+                                       <span class="cont">Visit our HTML tutorial.</span>
+                                       <span class="lt"> <</span><span class="attribute">/a</span><span class="gt">></span>
+                        
+                                    </div>
+            
+                                    </div>
+        
+                                <div class="example" style="height: 120px;">
+                                    <h3>Bad:</h3>
+                                    <div class="code" style="height: 40px;">
+                        
+                                        <span class="lt"> <</span><span class="attribute">a</span>
+                                       <span class="tag">HREF</span>
+                                       <span class="link">="https://www.w3schools.com/html/"</span>
+                                       <span class="gt">></span>
+                                       <span class="cont">Visit our HTML tutorial.</span>
+                                       <span class="lt"> <</span><span class="attribute">/a</span><span class="gt">></span>
+                        
+                                    </div>
+            
+                                    </div>
+
+
+                                    <hr>
+
+
+                                    <h2>Always Quote Attribute Values</h2>
+
+                                    <p>HTML allows attribute values without quotes.</p>
+                                    <p>However, we recommend quoting attribute values, because:</p>
+
+                                    <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                                        <li>Developers normally quote attribute values</li>
+                                        <li>Quoted values are easier to read</li>
+                                        <li>You MUST use quotes if the value contains spaces</li>
+                                    </ul>
+                        
+
+                                    <div class="example" style="height: 120px;">
+                                        <h3>Good:</h3>
+                                        <div class="code" style="height: 40px;">
+                            
+                                           <span class="lt"> <</span><span class="attribute">table</span>
+                                           <span class="tag">class</span>
+                                           <span class="link">="striped"</span>
+                                           <span class="gt">></span>
+                            
+                                        </div>
+                
+                                        </div>
+            
+                                    <div class="example" style="height: 120px;">
+                                        <h3>Bad:</h3>
+                                        <div class="code" style="height: 40px;">
+                            
+                                            <span class="lt"> <</span><span class="attribute">table</span>
+                                           <span class="tag">class</span>
+                                           <span class="link">=striped</span>
+                                           <span class="gt">></span>
+                            
+                                        </div>
+                
+                                        </div>
+
+
+
+                                    <hr>
+
+                                    <h2>Always Specify alt, width, and height for Images</h2>
+
+                                    <p>Always specify the alt attribute for images. This attribute is important if the image for some reason cannot be displayed.</p>
+
+                                    <p>Also, always define the width and height of images. This reduces flickering, because the browser can reserve space for the image before loading.</p>
+
+                                    <div class="example" style="height: 120px;">
+                                        <h3>Good:</h3>
+                                        <div class="code" style="height: 40px;">
+                            
+                                           <span class="lt"> <</span><span class="attribute">img</span>
+                                           <span class="tag">src</span>
+                                           <span class="link">="html5.gif"</span>
+                                           <span class="tag">alt</span>
+                                           <span class="link">="HTML5"</span>
+                                           <span class="tag">style</span>
+                                           <span class="link">="width:128px;height:128px"</span>
+                                           <span class="gt">></span>
+                            
+                                        </div>
+                
+                                        </div>
+            
+                                    <div class="example" style="height: 120px;">
+                                        <h3>Bad:</h3>
+                                        <div class="code" style="height: 40px;">
+                            
+                                            <span class="lt"> <</span><span class="attribute">img</span>
+                                           <span class="tag">src</span>
+                                           <span class="link">="html5.gif"</span>
+                                           <span class="gt">></span>
+                            
+                                        </div>
+                
+                                        </div>
+
+
+                                        <hr>
+
+
+                                        <h2>Spaces and Equal Signs</h2>
+
+                                        <p>HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.</p>
+
+                                        <div class="example" style="height: 120px;">
+                                            <h3>Good:</h3>
+                                            <div class="code" style="height: 40px;">
+                                
+                                               <span class="lt"> <</span><span class="attribute">link</span>
+                                               <span class="tag">rel</span>
+                                               <span class="link">="stylesheet"</span>
+                                               <span class="tag">href</span>
+                                               <span class="link">="styles.css"</span>
+                                               <span class="gt">></span>
+                                
+                                            </div>
+                    
+                                            </div>
+                
+                                        <div class="example" style="height: 120px;">
+                                            <h3>Bad:</h3>
+                                            <div class="code" style="height: 40px;">
+                                
+                                                <span class="lt"> <</span><span class="attribute">link</span>
+                                                <span class="tag">rel</span>
+                                                   <span class="link">   ="stylesheet"</span>
+                                                <span class="tag">href</span>
+                                                    <span class="link">   ="styles.css"</span>
+                                                <span class="gt">></span>
+                                
+                                            </div>
+                    
+                                            </div>
+
+
+                                            <hr>
+
+
+                                            <h2>Avoid Long Code Lines</h2>
+
+                            <p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
+
+                            <p>Try to avoid too long code lines.</p>
+
+                            <hr>
+
+
+
+                            <h2>Never Skip the "title" Element</h2>
+
+                            <p>The "title" element is required in HTML.</p>
+
+                            <p>The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+
+                            <p>The "title" element:</p>
+
+                            
+                            <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                                <li>defines a title in the browser toolbar</li>
+                                <li>provides a title for the page when it is added to favorites</li>
+                                <li>displays a title for the page in search-engine results</li>
+                            </ul>
+    
+                            <p>So, try to make the title as accurate and meaningful as possible: </p>
+
+                            <div class="example" style="height: 90px;">
+                                <div class="code" style="height: 40px;">
+                    
+                            <span class="lt"> <</span><span class="attribute">title</span><span class="gt">></span>
+
+                            <span class="cont">HTML Style Guide and Coding Conventions</span>
+
+                            <span class="lt"> <</span><span class="attribute">/title</span><span class="gt">></span>
+                    
+                                </div>
+        
+                                </div>
+
+
+                                <hr>
+
+                        <!-- <div class="example" style="height: 350px;">
+                            <h3>Example</h3>
+                        <div class="code">
+                            <span class="lt"> <</span><span class="attribute">h1</span><span class="gt">></span><span class="cont">This is heading 1</span><span class="lt"><</span><span class="attribute">/h1</span><span class="gt">></span> <br>
+                            <span class="lt"> <</span><span class="attribute">p</span><span class="gt">></span><span class="cont">This is some text.</span><span class="lt"><</span><span class="attribute">/p</span><span class="gt">></span> <br>
+                            <span class="lt"> <</span><span class="attribute">hr</span><span class="gt">></span> <br>
+
+                            <span class="lt"> <</span><span class="attribute">h2</span><span class="gt">></span><span class="cont">This is heading 2</span><span class="lt"><</span><span class="attribute">/h2</span><span class="gt">></span> <br>
+                            <span class="lt"> <</span><span class="attribute">p</span><span class="gt">></span><span class="cont">This is some other text.</span><span class="lt"><</span><span class="attribute">/p</span><span class="gt">></span> <br>
+                            <span class="lt"> <</span><span class="attribute">hr</span><span class="gt">></span> <br>
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div> -->
+
+                        <!-- <div class="tips">
+                            <strong>Note: </strong><p>Browsers automatically add some white space (a margin) before and after a heading.</p>
+                        </div> -->
+
+
+
+                        <!-- <div class="tips">
+                            <strong>Note: </strong><p>Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+                        </div> -->
+
+                        <!-- <h2>HTML Attributes</h2>
+                        <ul style="margin-left: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; line-height: 22ppx;">
+                            <li>All HTML elements can have <strong>attributes</strong></li>
+                            <li>Attributes provide <strong>additional information</strong> about elements</li>
+                            <li>Attributes are always specified in <strong>the start tag</strong></li>
+                            <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+                        </ul> -->                  
+
+                        <!-- <div class="example" style="height: 220px;">
+                            <h3>Example</h3>
+                        <div class="code">
+                            <span class="lt"> <</span><span class="attribute">a</span> <span class="tag">href</span><span class="link">="https://www.w3schools.com"</span><span class="gt">></span><span class="cont">This is a link.</span><span class="lt"><</span><span class="attribute">/a</span><span class="gt">></span> <br>
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div> -->
+
+
+                        <!-- <div class="example" style="height: 220px;">
+                            <h3>Example</h3>
+                        <div class="code">
+                            <span class="lt"> <</span><span class="attribute">img</span> <span class="tag">src</span><span class="link">="img_girl.jpg"</span><span class="gt">></span> <br>
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div> -->
+
+                       
+
+                        <!-- <div class="example" style="height: 220px;">
+                            <h3>Example</h3>
+                        <div class="code">
+                            <span class="lt"> <</span><span class="attribute">img</span> <span class="tag">src</span><span class="link">="img_girl.jpg"</span><span class="tag"> width</span><span class="link">="500"</span><span class="tag"> height</span><span class="link">="600"</span><span class="gt">></span> <br>
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div> -->
+
+                        <!-- <div class="example" style="height: 220px;">
+                            <h3>Example</h3>
+                        <div class="code">
+                            <span class="lt"> <</span><span class="attribute">img</span> <span class="tag">src</span><span class="link">="img_girl.jpg"</span><span class="tag"> alt</span><span class="link">="Girl with a jacket"</span><span class="gt">></span> <br>
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div> -->
+        
+
+                        <!-- <div class="example" style="height: 220px;">
+                            <h3>Example</h3>
+                        <div class="code">
+                            <span class="lt"> <</span><span class="attribute">p</span> <span class="tag">syle</span><span class="link">="color:red;"</span><span class="gt">></span><span>This is a red paragraph.</span><span class="lt"> <</span><span class="attribute">/p</span><span class="gt">></span> <br>
+                        </div>
+                        <a>Try it Yourself >> </a>
+                        </div> -->
+
+
+                        <!-- <div class="panel">
+                            <p>HTML is the standard markup language for Web pages.</p>
+                            <p>With HTML you can create your own Website.</p>
+                            <p>HTML is easy to learn - You will enjoy it!</p>
+
+                            <a>Study our free HTML Tutorial >> </a>
+                            <a>Watch our Video Tutorial >> </a>
+                        </div> -->
+
+                        <!-- <h2>Easy Learning with HTML "Try it Yourself"</h2>
+                        <p>With our "Try it Yourself" editor, you can edit the HTML code and view the result:</p> -->
+
+                        <!-- <div class="example">
+                            <h3>Example</h3>
+
+                            <div class="code">
+                                <span class="lt"> <</span><span class="attribute">!DOCTYPE </span> <span class="tag"> html</span><span class="gt">> </span> <br>
+
+                                <span class="lt"> <</span><span class="tag">html</span><span class="gt">> </span> <br> -->
+                                <!-- <span class="lt"> <</span><span class="tag">head</span><span class="gt">> </span> <br> -->
+
+                                <!-- <span class="lt"> <</span><span class="tag">title</span><span class="gt">></span><span class="cont">Page Title</span><span class="lt"><</span><span class="tag">/title</span><span class="gt">></span> <br> -->
+
+                                <!-- <span class="lt"> <</span><span class="tag">/head</span><span class="gt">> </span> <br> -->
+<!-- 
+                                <span class="lt"> <</span><span class="tag">body</span><span class="gt">> </span> <br>
+
+                                <span class="lt"> <</span><span class="tag">h1</span><span class="gt">></span><span class="cont">My First Heading</span><span class="lt"><</span><span class="tag">/h1</span><span class="gt">></span> <br>
+
+                                <span class="lt"> <</span><span class="tag">p</span><span class="gt">></span><span class="cont">My first paragraph.</span><span class="lt"><</span><span class="tag">/p</span><span class="gt">></span> <br>
+
+                                <span class="lt"> <</span><span class="tag">/body</span><span class="gt">> </span> <br>
+                                <span class="lt"> <</span><span class="tag">/html</span><span class="gt">> </span> 
+                            </div>
+
+                            <a>Try it Yourself >> </a>
+                        </div>
+                        <hr> -->
+
+                        <!-- <div class="tips">
+                            <strong>Tip: </strong><p>You can use either .htm or .html as file extension. There is no difference; it is up to you.</p>
+                        </div> -->
+
+                        <!-- <div class="example">
+                            <h3>Example</h3>
+
+                            <div class="code">
+                                <span class="lt"> <</span><span class="attribute">!DOCTYPE </span> <span class="tag"> html</span><span class="gt">> </span> <br>
+
+                                <span class="lt"> <</span><span class="tag">html</span><span class="gt">> </span> <br>
+                                <span class="lt"> <</span><span class="tag">head</span><span class="gt">> </span> <br>
+
+                                <span class="lt"> <</span><span class="tag">title</span><span class="gt">></span><span class="cont">Page Title</span><span class="lt"><</span><span class="tag">/title</span><span class="gt">></span> <br>
+
+                                <span class="lt"> <</span><span class="tag">/head</span><span class="gt">> </span> <br>
+
+                                <span class="lt"> <</span><span class="tag">body</span><span class="gt">> </span> <br>
+
+                                <span class="lt"> <</span><span class="tag">h1</span><span class="gt">></span><span class="cont">This is a Heading</span><span class="lt"><</span><span class="tag">/h1</span><span class="gt">></span> <br>
+
+                                <span class="lt"> <</span><span class="tag">p</span><span class="gt">></span><span class="cont">This is a paragraph.</span><span class="lt"><</span><span class="tag">/p</span><span class="gt">></span> <br>
+
+                                <span class="lt"> <</span><span class="tag">/body</span><span class="gt">> </span> <br>
+                                <span class="lt"> <</span><span class="tag">/html</span><span class="gt">> </span> 
+                            </div>
+
+                            <a>Try it Yourself >> </a>
+                        </div>
+
+                        <hr> -->
+
+
+                        <div class="mybtn_div">
+                            <a href="/32Sementic.html" class="mybtn"><button>Previous</button></a>
+                            <a href="/34Entities.html" class="mybtn"><button>Next</button></a>
+                        </div>
+
+                    </section>
+
+
+                    <aside class="advertise">
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                        <img src="assets/aside.png" alt="ad">
+
+                    </aside>
+                </main>
+                <footer>
+                    footer
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
